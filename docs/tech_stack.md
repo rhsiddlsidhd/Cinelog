@@ -1,4 +1,4 @@
-# 기술 스택 — TaskFlow
+# 기술 스택 — Cinelog
 
 ## 언어
 

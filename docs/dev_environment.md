@@ -2,20 +2,26 @@
 
 ## 사전 요구사항
 
-<!-- Node.js 버전, Python 버전 등 필수 설치 항목 -->
+- Node.js LTS 최신 안정화 버전
 
 ## 설치 방법
 
-<!--
-예시:
-git clone ...
+```bash
+git clone https://github.com/rhsiddlsidhd/Cinelog.git
+cd Cinelog
 npm install
--->
+```
 
 ## 환경 변수
 
-<!-- .env 파일 항목 목록 및 설명 -->
+`.env.local` 파일을 생성 후 아래 항목을 입력한다.
+
+| 변수명 | 설명 |
+| --- | --- |
+| `TMDB_API_KEY` | TMDB API 인증 키 |
 
 ## 로컬 실행
 
-<!-- 개발 서버 실행 명령어 -->
+```bash
+npm run dev
+```

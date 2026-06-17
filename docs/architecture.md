@@ -6,24 +6,24 @@ TMDB 데이터를 활용해 영화·드라마·인물 정보를 탐색하는 웹
 
 ## 레이어 구조
 
-| 레이어 | 폴더 | 역할 |
-| --- | --- | --- |
-| 라우팅 | `app/` | Next.js App Router 기반 페이지 및 레이아웃 |
-| UI | `components/` | 재사용 가능한 UI 컴포넌트 |
-| 비즈니스 로직 | `hooks/` | 커스텀 훅 |
-| 상태 관리 | `store/` | zustand 스토어 |
-| API 통신 | `services/` | TMDB API 호출 |
+| 레이어        | 폴더          | 역할                                       |
+| ------------- | ------------- | ------------------------------------------ |
+| 라우팅        | `app/`        | Next.js App Router 기반 페이지 및 레이아웃 |
+| UI            | `components/` | 재사용 가능한 UI 컴포넌트                  |
+| 비즈니스 로직 | `hooks/`      | 커스텀 훅                                  |
+| 상태 관리     | `store/`      | zustand 스토어                             |
+| API 통신      | `services/`   | TMDB API 호출                              |
 
 ## 모듈 구성
 
-| 모듈 | 위치 | 설명 |
-| --- | --- | --- |
-| 공통 컴포넌트 | `src/components/ui/`, `src/components/layout/` | 전역에서 재사용하는 UI·레이아웃 컴포넌트 |
-| 페이지별 컴포넌트 | `app/[page]/_components/` | 해당 페이지에서만 사용하는 컴포넌트 (Next.js 코로케이션) |
-| 페이지별 훅 | `app/[page]/_hooks/` | 해당 페이지에 종속된 커스텀 훅 |
-| 공통 훅 | `src/hooks/` | 여러 페이지에서 공유하는 커스텀 훅 |
-| 페이지별 서비스 | `app/[page]/_services/` | 해당 페이지의 TMDB API 호출 |
-| 클라이언트 상태 | `src/store/` | 역할별 zustand 스토어 (filter, ui 등) |
+| 모듈              | 위치                                           | 설명                                                     |
+| ----------------- | ---------------------------------------------- | -------------------------------------------------------- |
+| 공통 컴포넌트     | `src/components/ui/`, `src/components/layout/` | 전역에서 재사용하는 UI·레이아웃 컴포넌트                 |
+| 페이지별 컴포넌트 | `app/[page]/_components/`                      | 해당 페이지에서만 사용하는 컴포넌트 (Next.js 코로케이션) |
+| 페이지별 훅       | `app/[page]/_hooks/`                           | 해당 페이지에 종속된 커스텀 훅                           |
+| 공통 훅           | `src/hooks/`                                   | 여러 페이지에서 공유하는 커스텀 훅                       |
+| 페이지별 서비스   | `app/[page]/_services/`                        | 해당 페이지의 TMDB API 호출                              |
+| 클라이언트 상태   | `src/store/`                                   | 역할별 zustand 스토어 (filter, ui 등)                    |
 
 ## 데이터 흐름
 

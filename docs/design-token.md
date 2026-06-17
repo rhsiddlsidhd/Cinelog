@@ -66,30 +66,32 @@ What distinguishes Spotify is its pill-and-circle geometry. Primary buttons use 
 
 ```css
 font-family:
-  'Pretendard',          /* 한글 우선 */
-  'DM Sans',             /* 영문·숫자 */
-  -apple-system, BlinkMacSystemFont,
-  'Segoe UI', sans-serif;
+  'Pretendard',
+  /* 한글 우선 */ 'DM Sans',
+  /* 영문·숫자 */ -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  sans-serif;
 ```
 
 ### Hierarchy
 
-| Role             | Font                      | Size             | Weight  | Line Height  | Letter Spacing | Notes                                          |
-| ---------------- | ------------------------- | ---------------- | ------- | ------------ | -------------- | ---------------------------------------------- |
-| Section Title    | DM Sans                   | 24px (1.50rem)   | 700     | normal       | normal         | Bold title weight                              |
-| Feature Heading  | Pretendard / DM Sans      | 18px (1.13rem)   | 600     | 1.30 (tight) | normal         | Semibold section heads                         |
-| Body Bold        | Pretendard / DM Sans      | 16px (1.00rem)   | 700     | normal       | normal         | Emphasized text                                |
-| Body             | Pretendard / DM Sans      | 16px (1.00rem)   | 400     | normal       | normal         | Standard body                                  |
-| Button Uppercase | DM Sans                   | 14px (0.88rem)   | 600–700 | 1.00 (tight) | 1.4px–2px      | `uppercase` 영문 버튼만 적용, 한글 버튼은 제외 |
-| Button           | Pretendard / DM Sans      | 14px (0.88rem)   | 700     | normal       | 0.14px         | Standard button                                |
-| Nav Link Bold    | Pretendard / DM Sans      | 14px (0.88rem)   | 700     | normal       | normal         | Navigation                                     |
-| Nav Link         | Pretendard / DM Sans      | 14px (0.88rem)   | 400     | normal       | normal         | Inactive nav                                   |
-| Caption Bold     | Pretendard / DM Sans      | 14px (0.88rem)   | 700     | 1.50–1.54    | normal         | Bold metadata                                  |
-| Caption          | Pretendard / DM Sans      | 14px (0.88rem)   | 400     | normal       | normal         | Metadata                                       |
-| Small Bold       | Pretendard / DM Sans      | 12px (0.75rem)   | 700     | 1.50         | normal         | Tags, counts                                   |
-| Small            | Pretendard / DM Sans      | 12px (0.75rem)   | 400     | normal       | normal         | Fine print                                     |
-| Badge            | Pretendard / DM Sans      | 10.5px (0.66rem) | 600     | 1.33         | normal         | `capitalize` 영문 뱃지만, 한글 뱃지는 제외     |
-| Micro            | Pretendard / DM Sans      | 10px (0.63rem)   | 400     | normal       | normal         | Smallest text                                  |
+| Role             | Font                 | Size             | Weight  | Line Height  | Letter Spacing | Notes                                          |
+| ---------------- | -------------------- | ---------------- | ------- | ------------ | -------------- | ---------------------------------------------- |
+| Section Title    | DM Sans              | 24px (1.50rem)   | 700     | normal       | normal         | Bold title weight                              |
+| Feature Heading  | Pretendard / DM Sans | 18px (1.13rem)   | 600     | 1.30 (tight) | normal         | Semibold section heads                         |
+| Body Bold        | Pretendard / DM Sans | 16px (1.00rem)   | 700     | normal       | normal         | Emphasized text                                |
+| Body             | Pretendard / DM Sans | 16px (1.00rem)   | 400     | normal       | normal         | Standard body                                  |
+| Button Uppercase | DM Sans              | 14px (0.88rem)   | 600–700 | 1.00 (tight) | 1.4px–2px      | `uppercase` 영문 버튼만 적용, 한글 버튼은 제외 |
+| Button           | Pretendard / DM Sans | 14px (0.88rem)   | 700     | normal       | 0.14px         | Standard button                                |
+| Nav Link Bold    | Pretendard / DM Sans | 14px (0.88rem)   | 700     | normal       | normal         | Navigation                                     |
+| Nav Link         | Pretendard / DM Sans | 14px (0.88rem)   | 400     | normal       | normal         | Inactive nav                                   |
+| Caption Bold     | Pretendard / DM Sans | 14px (0.88rem)   | 700     | 1.50–1.54    | normal         | Bold metadata                                  |
+| Caption          | Pretendard / DM Sans | 14px (0.88rem)   | 400     | normal       | normal         | Metadata                                       |
+| Small Bold       | Pretendard / DM Sans | 12px (0.75rem)   | 700     | 1.50         | normal         | Tags, counts                                   |
+| Small            | Pretendard / DM Sans | 12px (0.75rem)   | 400     | normal       | normal         | Fine print                                     |
+| Badge            | Pretendard / DM Sans | 10.5px (0.66rem) | 600     | 1.33         | normal         | `capitalize` 영문 뱃지만, 한글 뱃지는 제외     |
+| Micro            | Pretendard / DM Sans | 10px (0.63rem)   | 400     | normal       | normal         | Smallest text                                  |
 
 ### Principles
 

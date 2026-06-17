@@ -2,18 +2,20 @@
 
 ## 네이밍 규칙
 
-| 대상 | 규칙 | 예시 |
-| --- | --- | --- |
-| 컴포넌트 | PascalCase | `MovieCard`, `SearchBar` |
-| 함수 / 변수 | camelCase | `fetchMovies`, `isLoading` |
-| 파일명 | kebab-case | `movie-card.tsx`, `use-movies.ts` |
-| 상수 | UPPER_SNAKE_CASE | `API_BASE_URL`, `MAX_PAGE_SIZE` |
+| 대상        | 규칙             | 예시                            |
+| ----------- | ---------------- | ------------------------------- |
+| 컴포넌트    | PascalCase       | `MovieCard`, `SearchBar`        |
+| 함수 / 변수 | camelCase        | `fetchMovies`, `isLoading`      |
+| 파일명      | kebab-case       | `movie-card.tsx`                |
+| 훅 파일명   | use + camelCase  | `useMovies.ts`, `useMobile.ts`  |
+| 상수        | UPPER_SNAKE_CASE | `API_BASE_URL`, `MAX_PAGE_SIZE` |
 
 ## 타입
 
 **목적**: 런타임이 아닌 컴파일 단계에서 타입 오류를 조기에 발견한다.
 
 **interface vs type**
+
 - `interface` — 객체 형태: 도메인 모델, API 응답, Props
 - `type` — 유니언, 리터럴, 유틸리티 타입 조합
 
@@ -47,7 +49,10 @@
 
 ```typescript
 // 금지
-enum Status { Pending, Done }
+enum Status {
+  Pending,
+  Done,
+}
 
 // 사용
 type Status = 'pending' | 'done'
@@ -82,4 +87,3 @@ type Status = 'pending' | 'done'
 ## 포맷터 / 린터
 
 ESLint + Prettier + prettier-plugin-tailwindcss (className 클래스 순서 자동 정렬)
-

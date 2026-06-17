@@ -17,8 +17,8 @@
 
 ## Context
 
-@docs/dev/coding-convention.md
-@docs/dev/error-handling.md
+@docs/coding-convention.md
+@docs/error-handling.md
 
 ---
 
@@ -26,23 +26,17 @@
 
 해당 문서를 읽지 않고 아래 작업을 시작하지 않는다.
 
-### 개발자 문서
-
-| 상황                           | 문서                           |
-| ------------------------------ | ------------------------------ |
-| git 작업                       | @docs/dev/branch-strategy.md   |
-| 새 기능 추가 / 모듈 구조 변경  | @docs/dev/architecture.md      |
-| 파일 / 폴더 생성               | @docs/dev/project-structure.md |
-| 라이브러리 / 의존성 추가       | @docs/dev/tech-stack.md        |
-| 환경 변수 / 실행 스크립트 변경 | @docs/dev/dev-environment.md   |
-| 컴포넌트 작성                  | @docs/dev/component-guide.md   |
-
-### 기획 문서
-
-| 상황                              | 문서                              |
-| --------------------------------- | --------------------------------- |
-| 서비스 목적 / 기능 범위 파악      | @docs/product/product-overview.md |
-| 화면 구성 / UI 요소 확인          | @docs/product/screen-specs.md     |
+| 상황                           | 문서                       |
+| ------------------------------ | -------------------------- |
+| git 작업                       | @docs/branch-strategy.md   |
+| 새 기능 추가 / 모듈 구조 변경  | @docs/architecture.md      |
+| 파일 / 폴더 생성               | @docs/project-structure.md |
+| 라이브러리 / 의존성 추가       | @docs/tech-stack.md        |
+| 환경 변수 / 실행 스크립트 변경 | @docs/dev-environment.md   |
+| 컴포넌트 작성                  | @docs/component-guide.md   |
+| 서비스 목적 / 기능 범위 파악   | @docs/product-overview.md  |
+| 화면 구성 / UI 요소 확인       | @docs/screen-specs.md      |
+| TMDB API 엔드포인트 확인       | @docs/api-specs.md         |
 
 ---
 
@@ -57,3 +51,4 @@
 |------|----------|------|------|
 | 2026-06-17 | 초기 구성 | 전체 | - |
 | 2026-06-17 | docs/ → docs/dev/ 이동, docs/product/ 신설 | CLAUDE.md, docs/ | 개발자/기획 문서 경로 분리 |
+| 2026-06-17 | flat 구조로 복원, api-specs.md 추가 | CLAUDE.md, docs/ | 단일 docs/ 통합 관리 + Notion API 명세 추가 |

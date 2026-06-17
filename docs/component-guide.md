@@ -2,9 +2,8 @@
 
 ## 전략
 
-shadcn/ui 컴포넌트를 구조·동작의 기반으로 사용한다.
-`globals.css`에 정의된 CSS 변수(design-token.md 기반)가 shadcn/ui 기본 스타일을 대체한다.
-컴포넌트를 새로 만들기 전에 shadcn/ui에 동일한 컴포넌트가 있는지 확인한다.
+`components/ui/` 하위 컴포넌트는 shadcn/ui 기반의 공유 컴포넌트다.
+스타일의 기반은 `@docs/design-token.md`에서 정의한 CSS 변수만 사용한다.
 
 ## 규칙
 
@@ -24,24 +23,31 @@ CSS 변수에 매핑된 Tailwind 시맨틱 클래스(`bg-background`, `text-fore
 
 **shadcn/ui 컴포넌트 확장**
 
-shadcn/ui 컴포넌트의 내부 구조를 직접 수정하지 않는다.
-`className` prop으로 토큰을 덮어씌운다.
-variant가 필요하면 `cva`로 확장한다.
+shadcn/ui는 소스 코드를 프로젝트에 복사하는 방식이므로 내부 수정이 가능하다.
+단, `className`으로 해결 가능한 경우에는 내부 수정을 하지 않는다.
+새로운 variant 추가나 구조 변경이 필요한 경우에만 내부(`src/components/ui/`)를 수정한다.
 
 ```tsx
-// 금지 — 내부 수정
-// Button 컴포넌트 소스를 직접 편집
-
-// 사용 — className 확장
+// className으로 해결 — 내부 수정 불필요
 <Button className="rounded-full bg-primary text-primary-foreground px-8">
   재생
 </Button>
+
+// variant 추가가 필요한 경우 — button.tsx 내부 cva 확장
+const buttonVariants = cva("...", {
+  variants: {
+    variant: {
+      spotify: "rounded-full bg-primary text-primary-foreground font-bold",
+    },
+  },
+})
 ```
 
 **하드코딩 금지**
 
-hex 값, px 수치를 컴포넌트 코드에 직접 작성하지 않는다.
-모든 값은 CSS 변수 또는 Tailwind 시맨틱 클래스를 통해 참조한다.
+hex 값, OKLCH 값, px 수치를 컴포넌트 코드에 직접 작성하지 않는다.
+모든 값은 `globals.css` CSS 변수 또는 Tailwind 시맨틱 클래스를 통해 참조한다.
+hex → OKLCH 변환은 `globals.css` 정의 시 한 번만 수행하고, 이후 컴포넌트에서는 클래스명만 사용한다.
 
 ```tsx
 // 금지

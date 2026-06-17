@@ -23,3 +23,4 @@
 | 파일 / 폴더 생성               | @docs/project-structure.md |
 | 라이브러리 / 의존성 추가       | @docs/tech-stack.md        |
 | 환경 변수 / 실행 스크립트 변경 | @docs/dev-environment.md   |
+| 컴포넌트 작성                  | @docs/component-guide.md   |

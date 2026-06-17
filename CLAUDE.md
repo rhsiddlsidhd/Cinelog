@@ -7,8 +7,8 @@
 
 ## Context
 
-@docs/coding_convention.md
-@docs/error_handling.md
+@docs/coding-convention.md
+@docs/error-handling.md
 
 ---
 
@@ -18,8 +18,8 @@
 
 | 상황                           | 문서                       |
 | ------------------------------ | -------------------------- |
-| git 작업                       | @docs/branch_strategy.md   |
+| git 작업                       | @docs/branch-strategy.md   |
 | 새 기능 추가 / 모듈 구조 변경  | @docs/architecture.md      |
-| 파일 / 폴더 생성               | @docs/project_structure.md |
-| 라이브러리 / 의존성 추가       | @docs/tech_stack.md        |
-| 환경 변수 / 실행 스크립트 변경 | @docs/dev_environment.md   |
+| 파일 / 폴더 생성               | @docs/project-structure.md |
+| 라이브러리 / 의존성 추가       | @docs/tech-stack.md        |
+| 환경 변수 / 실행 스크립트 변경 | @docs/dev-environment.md   |

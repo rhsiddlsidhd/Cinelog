@@ -36,7 +36,16 @@
 | 컴포넌트 작성                  | @docs/component-guide.md   |
 | 서비스 목적 / 기능 범위 파악   | @docs/product-overview.md  |
 | 화면 구성 / UI 요소 확인       | @docs/screen-specs.md      |
-| TMDB API 엔드포인트 확인       | @docs/api-specs.md         |
+
+### TMDB API 명세서
+
+| 상황                     | 문서                    |
+| ------------------------ | ----------------------- |
+| 검색 API 엔드포인트 확인 | @docs/api/search.md     |
+| 트렌딩 API 엔드포인트 확인 | @docs/api/trending.md |
+| 영화 API 엔드포인트 확인 | @docs/api/movie.md      |
+| TV API 엔드포인트 확인   | @docs/api/tv.md         |
+| 인물 API 엔드포인트 확인 | @docs/api/person.md     |
 
 ---
 
@@ -52,3 +61,4 @@
 | 2026-06-17 | 초기 구성 | 전체 | - |
 | 2026-06-17 | docs/ → docs/dev/ 이동, docs/product/ 신설 | CLAUDE.md, docs/ | 개발자/기획 문서 경로 분리 |
 | 2026-06-17 | flat 구조로 복원, api-specs.md 추가 | CLAUDE.md, docs/ | 단일 docs/ 통합 관리 + Notion API 명세 추가 |
+| 2026-06-17 | api-specs.md → docs/api/*.md 분리 | CLAUDE.md, docs/api/ | 도메인별 독립 로딩으로 컨텍스트 효율화 |
